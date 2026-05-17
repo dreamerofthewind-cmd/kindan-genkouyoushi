@@ -1,3 +1,6 @@
+export const runtime = "edge";
+
+// 以下は既存のコードをそのまま残す
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 
