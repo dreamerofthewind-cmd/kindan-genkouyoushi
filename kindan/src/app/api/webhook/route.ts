@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
 }
 
 // Webhookはbody parsingを無効にする必要がある
-export const config = {
+export const runtime = {
   api: {
     bodyParser: false,
   },
