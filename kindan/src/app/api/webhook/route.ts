@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
   return NextResponse.json({ received: true });
 }
 
-// Webhookはbody parsingを無効にする必要がある
+// Webhookはbody parsingを無効にする必要がある！
 export const config = {
   api: {
     bodyParser: false,
