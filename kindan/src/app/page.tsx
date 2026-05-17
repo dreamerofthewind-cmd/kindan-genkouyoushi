@@ -861,7 +861,7 @@ export default function App() {
     <>
       {screen === "setup" && (
         <SetupScreen
-          onStart={(c) => { setConfig(c as Config); setScreen("writing"); }}
+          onStart={(c) => { setConfig(c as unknown as Config); setScreen("writing"); }}
           theme={theme} setTheme={setTheme}
           save={save} onSave={handleSave} onOpenShop={() => setShowShop(true)}
         />
